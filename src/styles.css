@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-full-blue {
+  width: 100%; /* Garante que o container ocupa 100% da largura do viewport. */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0; /* Remove preenchimentos internos do container. */
+  overflow: hidden; /* Esconde conteúdos que ultrapassam as dimensões do container. */
+  position: relative; /* Define a posição como relativa para manipulação futura (ex.: posicionamento de elementos filhos). */
+  background: linear-gradient(to bottom, #000, #060525);
+  min-height: 150vh; /* Garante que o container tenha, no mínimo, 105% da altura total da janela do navegador. */
+}
+
+

@@ -1,56 +1,96 @@
-/* Certifique-se de que o swiper tenha uma altura */
-/*.swiper {*/
-/*  width: 100%;*/
-/*  height: 300px; !* ou qualquer valor de altura que você preferir *!*/
-/*}*/
-
-/*.swiper-wrapper {*/
-/*  display: flex;*/
-/*}*/
-
-/*.swiper-slide {*/
-/*  width: auto; !* Ajuste a largura para garantir que os slides se comportem corretamente *!*/
-/*  height: 100%; !* Alinhe a altura dos slides *!*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
-
-/*.swiper-slide img {*/
-/*  max-width: 100%;  !* Garantir que as imagens se ajustem corretamente dentro do slide *!*/
-/*  max-height: 100%;*/
-/*  object-fit: cover; !* Isso ajuda a garantir que a imagem cubra o slide sem distorcer *!*/
-/*}*/
-
-/*.swiper-button-next{*/
-/*  border:slateblue solid 1px;*/
-/*  padding: 20px;*/
-/*}*/
-/*.swiper-button-prev{*/
-/*  border:slateblue solid 1px;*/
-/*  padding: 20px;*/
-/*}*/
-
-.swiper {
-  width: 100%;
+img {
+  max-width: 100%;
   height: auto;
+  display: block;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
 
-  /* Centraliza o conteúdo */
-  display: flex;
+/* Container */
+.swiper {
+  position: relative;
+  padding: 14px 0;
+}
+
+/* Define o tamanho do slide */
+.swiper-slide {
+  height: auto;
+  width: 100%;
+  position: relative;
+  align-content: center;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  left: 10px;
 }
 
+/* Define o tamanho e a aparência das imagens */
 .swiper-slide img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+  width: 90%; /* Largura total do slide */
+  height: 100%;
+  object-fit: cover; /* Preenche o contêiner mantendo a proporção */
+  max-width: 100%; /* Previne que imagens excedam o tamanho do slide */
+  max-height: 100%; /* Previne que imagens excedam o tamanho do slide */
+  border: 2px solid black; /* Borda preta */
+  border-radius: 5px; /* Arredondamento */
+  transition: border 0.3s ease, transform 0.3s ease;
 }
 
+.swiper-slide img:hover {
+  border: white 2px solid;
+  cursor:pointer;
+  border-radius: 5px;
+  transform: scale(1.05); /* Pequeno zoom para dar destaque */
+}
+
+.swiper-slide img:hover:active {
+  cursor: grabbing;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  position: relative;
+  color: cornflowerblue;
+  font-weight: bold;
+  padding: 10px 12px;
+  border: 2px solid cornflowerblue;
+  background-color: black;
+  opacity: .7;
+  border-radius: 10px;
+  scale: 60%;
+}
+
+.swiper-button-next:after {
+right: 4px;
+}
+
+.swiper-button-prev:after {
+left: 6px;
+}
+
+/* posição dos bullets */
+.swiper-pagination {
+  position: relative;
+  top: 12px;
+}
+
+/* Cor dos bullets inativos */
+.swiper-pagination-bullet {
+  background-color: #ccc; /* Cor de fundo do bullet */
+  opacity: 0.2; /* Transparência do bullet */
+  transition: opacity 0.4s;
+  scale: 1.2;
+}
+
+/* Bullet ativo (atual) */
+.swiper-pagination-bullet-active {
+  background-color: #2196f3; /* Cor do bullet ativo */
+  opacity: 1; /* Transparência total */
+}
+
+.highlights{
+  color:white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  position: relative;
+  top: 14px;
+  left: 12px;
+}
