@@ -1,0 +1,33 @@
+<p>movie-carousel works!</p>
+<!--<div class="swiper">-->
+<!--  <div class="swiper-wrapper">-->
+<!--    <div class="swiper-slide" *ngFor="let movie of movies">-->
+<!--      <img [src]="movie.image" alt="{{movie.title}}" />-->
+<!--      <h3>{{movie.title}}</h3>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; Botões de navegação &ndash;&gt;-->
+<!--  <div class="swiper-button-next"></div>-->
+<!--  <div class="swiper-button-prev"></div>-->
+
+<!--  &lt;!&ndash; Paginação &ndash;&gt;-->
+<!--  <div class="swiper-pagination"></div>-->
+<!--</div>-->
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let movie of movies">
+      <img [src]="movie.image" alt="{{ movie.title }}">
+      <p>{{ movie.title }}</p>
+    </div>
+  </div>
+
+  <!-- Botões de navegação -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <!-- Paginação -->
+  <div class="swiper-pagination"></div>
+</div>
+
