@@ -4,7 +4,6 @@ img {
   display: block;
 }
 
-
 /* Container */
 .swiper {
   position: relative;
@@ -13,24 +12,22 @@ img {
 
 /* Define o tamanho do slide */
 .swiper-slide {
-  height: auto;
   width: 100%;
+  height: auto;
   position: relative;
-  align-content: center;
+  display: flex;
   justify-content: center;
   align-items: center;
-  left: 10px;
 }
 
 /* Define o tamanho e a aparência das imagens */
 .swiper-slide img {
-  width: 90%; /* Largura total do slide */
-  height: 100%;
-  object-fit: cover; /* Preenche o contêiner mantendo a proporção */
-  max-width: 100%; /* Previne que imagens excedam o tamanho do slide */
-  max-height: 100%; /* Previne que imagens excedam o tamanho do slide */
-  border: 2px solid black; /* Borda preta */
-  border-radius: 5px; /* Arredondamento */
+  width: 90%;
+  max-width: 90%;
+  height:100%;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 6px;
   transition: border 0.3s ease, transform 0.3s ease;
 }
 
@@ -59,11 +56,11 @@ img {
 }
 
 .swiper-button-next:after {
-right: 4px;
+
 }
 
 .swiper-button-prev:after {
-left: 6px;
+
 }
 
 /* posição dos bullets */
