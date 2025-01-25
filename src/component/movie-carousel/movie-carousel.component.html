@@ -2,8 +2,10 @@
 <div class="swiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let movie of movies">
-      <img [src]="movie.image" alt="{{ movie.title }}">
-<!--      <p>{{ movie.title }}</p>-->
+      <a href="detail.html">
+        <img [src]="movie.image"  alt="{{ movie.title }}">
+      </a>
+      <!--      <p>{{ movie.title }}</p>-->
     </div>
   </div>
 
@@ -19,7 +21,10 @@
 <div class="swiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let serie of series">
-      <img [src]="serie.image" alt="{{ serie.title }}">
+      <a href="detail.html">
+        <img [src]="serie.image" alt="{{ serie.title }}">
+      </a>
+
       <!--      <p>{{ movie.title }}</p>-->
     </div>
   </div>

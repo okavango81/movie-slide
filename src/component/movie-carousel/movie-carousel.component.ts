@@ -15,28 +15,30 @@ import 'swiper/swiper-bundle.min.css';
 })
 export class MovieCarouselComponent implements AfterViewInit {
   movies = [
-    {title: 'Movie 1', image: 'edplus_img/opt/opt_card.png'},
-    {title: 'Movie 2', image:  'edplus_img/nbt/nbt_card.png'},
-    {title: 'Movie 3', image: 'edplus_img/rba/rba_card.png'},
-    {title: 'Movie 1', image: 'edplus_img/opt/op2_card.png'},
-    {title: 'Movie 2', image: 'edplus_img/bb2/bb2_card.png'},
-    {title: 'Movie 3', image: 'edplus_img/chp/chp_card.png'},
-    {title: 'Movie 3', image: 'edplus_img/sof/sof_card.png'},
-    {title: 'Movie 3', image: 'edplus_img/sml/sml_card.png'},
-    {title: 'Movie 3', image: 'edplus_img/svp/svp_card.png'},
-    {title: 'Movie 3', image: 'edplus_img/apf/apf_card.png'}
+    {title: 'Movie1', image: 'edplus_img/mov/act/opt/opt_card.png'},
+    {title: 'Movie1', image: 'edplus_img/mov/act/opt/op2_card.png'},
+    {title: 'Movie1', image: 'edplus_img/mov/com/bb2/bb2_card.png'},
+    {title: 'Movie1', image: 'edplus_img/mov/com/mtq/mtq_card.png'},
+    {title: 'Movie1', image: 'edplus_img/mov/com/rba/rba_card.png'},
+    {title: 'Movie1', image: 'edplus_img/mov/com/nbt/nbt_card.png'},
+    {title: 'Movie1', image: 'edplus_img/mov/dra/apf/apf_card.png'},
+    {title: 'Movie1', image: 'edplus_img/mov/dra/cra/cra_card.png'},
+    {title: 'Movie1', image: 'edplus_img/mov/sus/oco/oco_card.png'},
+    {title: 'Movie1', image: 'edplus_img/mov/sus/sml/sml_card.png'},
   ];
   series = [
-    {title: 'Movie 1', image: 'edplus_img/chl/chl_card.png'},
-    {title: 'Movie 2', image:  'edplus_img/chv/chv_card.png'},
-    {title: 'Movie 3', image: 'edplus_img/lts/lts_card.png'},
-    {title: 'Movie 1', image: 'edplus_img/mpd/mpd_card.png'},
-    {title: 'Movie 2', image: 'edplus_img/toc/toc_card.png'},
-    {title: 'Movie 2', image:  'edplus_img/epc/epc_card.png'},
-    {title: 'Movie 2', image:  'edplus_img/smp/smp_card.png'}
+    {title: 'Serie1', image: 'edplus_img/ser/chl/chl_card.png'},
+    {title: 'Serie1', image: 'edplus_img/ser/chv/chv_card.png'},
+    {title: 'Serie1', image: 'edplus_img/ser/epc/epc_card.png'},
+    {title: 'Serie1', image: 'edplus_img/ser/lts/lts_card.png'},
+    {title: 'Serie1', image: 'edplus_img/ser/mpd/mpd_card.png'},
+    {title: 'Serie1', image: 'edplus_img/ser/smp/smp_card.png'},
+    {title: 'Serie1', image: 'edplus_img/ser/toc/toc_card.png'},
+    {title: 'Serie1', image: 'edplus_img/ser/hdg/hdg_card.png'},
+    {title: 'Serie1', image: 'edplus_img/ser/icl/icl_card.png'},
+    {title: 'Serie1', image: 'edplus_img/ser/mrc/mrc_card.png'}
+
   ];
-
-
 
   constructor(private elementRef: ElementRef) {
   }
@@ -44,7 +46,7 @@ export class MovieCarouselComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const swiper = new Swiper('.swiper', {
       modules: [Navigation, Pagination, Autoplay],
-      spaceBetween: 15,
+      spaceBetween: 50,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -54,21 +56,17 @@ export class MovieCarouselComponent implements AfterViewInit {
         el: '.swiper-pagination',
       },
       autoplay: {
-        delay: 6000,
+        delay: 8000,
         disableOnInteraction: false, // Não para permanentemente o autoplay
       },
       loop: false, // Removido loop para evitar comportamento inesperado
-      speed: 1800,
+      speed: 1500,
       breakpoints: {
-        350: {slidesPerView: 2},
-        480: {slidesPerView: 3},
-        520: {slidesPerView: 2},
-        640: {slidesPerView: 4},
+        576: {slidesPerView: 3},
         768: {slidesPerView: 4},
-        1024: {slidesPerView: 6},
-        1280: {slidesPerView: 6},
-        1536: {slidesPerView: 5},
-        1600: {slidesPerView: 5},
+        992: {slidesPerView: 5},
+        1200: {slidesPerView: 6},
+        1400: {slidesPerView: 6},
       },
     });
 
