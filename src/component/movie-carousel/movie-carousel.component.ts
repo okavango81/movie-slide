@@ -46,7 +46,7 @@ export class MovieCarouselComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const swiper = new Swiper('.swiper', {
       modules: [Navigation, Pagination, Autoplay],
-      spaceBetween: 50,
+      spaceBetween: 36,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -62,10 +62,17 @@ export class MovieCarouselComponent implements AfterViewInit {
       loop: false, // Removido loop para evitar comportamento inesperado
       speed: 1500,
       breakpoints: {
-        576: {slidesPerView: 3},
-        768: {slidesPerView: 4},
-        992: {slidesPerView: 5},
-        1200: {slidesPerView: 6},
+        375: {slidesPerView: 2},
+        412: {slidesPerView: 1},
+        576: {slidesPerView: 2},
+        667: {slidesPerView: 5},
+        684: {slidesPerView: 4},
+        734: {slidesPerView: 5},
+        736: {slidesPerView: 5},
+        768: {slidesPerView: 2},
+        992: {slidesPerView: 3},
+        1024: {slidesPerView: 4},
+        1200: {slidesPerView: 4},
         1400: {slidesPerView: 6},
       },
     });

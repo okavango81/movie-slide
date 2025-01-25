@@ -8,27 +8,29 @@
 /* Container */
 .swiper {
   position: relative;
-  padding: 14px 0;
+  padding: 10px 18px 10px 7px;
 }
 
 /* Define o tamanho do slide */
 .swiper-slide {
   position: relative;
+  left: 5px;
+  /*border:solid 1px greenyellow;*/
 }
 
 /* Define o tamanho e a aparência das imagens */
 .swiper-slide img {
   width: 100%;
-  height: 40vh !important;
-  border: 2px solid black;
+  height: 44vh;
+  border: 3px solid transparent;
   border-radius: 6px;
   transition: border 0.3s ease, transform 0.3s ease;
-  position: relative;
-  object-fit: fill !important;
+  box-sizing: border-box;
+  display: block;
 }
 
 .swiper-slide img:hover {
-  border: white 2px solid;
+  border: white 3px solid;
   cursor: pointer;
   border-radius: 5px;
   transform: scale(1.05); /* Pequeno zoom para dar destaque */
@@ -48,7 +50,7 @@
   background-color: black;
   opacity: .7;
   border-radius: 10px;
-  scale: 60%;
+  scale: 45%;
 }
 
 .swiper-button-next:after {
@@ -85,5 +87,5 @@
   font-weight: bold;
   position: relative;
   top: 14px;
-  left: 12px;
+  left: 14px;
 }
