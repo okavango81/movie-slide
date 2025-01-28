@@ -1,0 +1,69 @@
+<header [ngClass]="{'scrolled': isScrolled}">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">EdPlus</a>
+<!--    <button-->
+<!--      aria-controls="navbarSupportedContent"-->
+<!--      [attr.aria-expanded]="menuOpen"-->
+<!--      aria-label="Toggle navigation"-->
+<!--      class="navbar-toggler"-->
+<!--      (click)="toggleMenu()"-->
+<!--      type="button">-->
+<!--      <i [class.fa-bars]="!menuOpen" [class.fa-times]="menuOpen" class="fa-solid"></i>-->
+<!--    </button>-->
+
+<!--    &lt;!&ndash; Menu que será controlado &ndash;&gt;-->
+<!--    <div-->
+<!--      id="navbarSupportedContent"-->
+<!--      class="collapse navbar-collapse"-->
+<!--      [ngClass]="{'show': menuOpen}">-->
+<!--      <ul class="navbar-nav">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Home</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Sobre</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Contato</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a aria-current="page" class="nav-link active" href="#">Início</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Séries</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Filmes</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Lançamentos</a>
+        </li>
+<!--                  <li class="nav-item dropdown">-->
+        <!--                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"-->
+        <!--                       role="button">-->
+        <!--                      Gêneros-->
+        <!--                    </a>-->
+        <!--                    <ul class="dropdown-menu">-->
+        <!--                      <li><a class="dropdown-item" href="#">Ação</a></li>-->
+        <!--                      <li><a class="dropdown-item" href="#">Aventura</a></li>-->
+        <!--                      <li><a class="dropdown-item" href="#">Comédia</a></li>-->
+        <!--                    </ul>-->
+        <!--                  </li>-->
+      </ul>
+      <form class="d-flex" role="search">
+        <input aria-label="Search" class="form-control" placeholder="Procurar... " type="search">
+        <button class="search-button" disabled type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+</header>

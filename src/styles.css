@@ -15,4 +15,14 @@ html, body {
   min-height: 150vh; /* Garante que o container tenha, no mínimo, 105% da altura total da janela do navegador. */
 }
 
+/*.container-full-black {*/
+/*  width: 100%; !* Garante que o container ocupa 100% da largura do viewport. *!*/
+/*  margin: 0 auto; !* Centraliza o conteúdo *!*/
+/*  padding: 0; !* Remove preenchimentos internos do container. *!*/
+/*  overflow: hidden; !* Esconde conteúdos que ultrapassam as dimensões do container. *!*/
+/*  position: relative; !* Define a posição como relativa para manipulação futura (ex.: posicionamento de elementos filhos). *!*/
+/*  background: #000;*/
+/*  min-height: 150vh; !* Garante que o container tenha, no mínimo, 105% da altura total da janela do navegador. *!*/
+/*}*/
+
 

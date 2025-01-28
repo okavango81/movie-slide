@@ -1,0 +1,78 @@
+/*nav.navbar-expand-lg {*/
+/*  background: transparent;*/
+/*  position: fixed;*/
+/*  z-index: 10;*/
+/*  width: 100%;*/
+/*  padding: 12px 16px;*/
+/*}*/
+
+/*logo*/
+a.navbar-brand {
+  color: #ffffff !important;
+  margin: 0 20px 0 0;
+  font-size: 2.1rem;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.navbar-brand:hover {
+  color: #cdcdcd !important;
+}
+
+a.nav-link {
+  color: #ffffff  !important;
+  margin: 0 10px 0 0;
+}
+
+a.nav-link:hover {
+
+}
+
+.nav-link.active {
+  position: relative; /* Necessário para posicionar o sublinhado */
+  font-weight: bold; /* Opcional: para destacar mais o link */
+}
+
+.nav-link.active::after{
+  content: ""; /* Adiciona o sublinhado */
+  position: absolute;
+  left: 0;
+  bottom: 8px; /* Ajusta a posição abaixo do texto */
+  width: 100%; /* Faz o sublinhado ter o mesmo tamanho do texto */
+  height: 1px; /* Espessura da linha */
+  background-color: #c6c6c6; /* Cor do sublinhado */
+  border-radius: 2px; /* Deixa a linha com bordas arredondadas (opcional) */
+}
+
+button.navbar-toggler {
+  border: none !important;
+  color: #cdcdcd !important;
+}
+
+input.form-control {
+  width: 20rem;
+  border-radius: 4px 0 0 4px;
+  padding: .375rem .75rem;
+}
+
+.search-button {
+  color: #ffffff;
+  background-color: rgb(74, 52, 161);
+  border-radius: 0 4px 4px 0;
+  padding: .375rem .9rem;
+  border: solid 1px white;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 10px 14px 90px 14px;
+  z-index: 1000;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+header.scrolled {
+  /*background: rgba(0, 0, 0, 0.9); !* Preto com 30% de opacidade *!*/
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 1) 90%);
+}

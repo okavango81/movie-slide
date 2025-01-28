@@ -1,13 +1,8 @@
-/*img {*/
-/*  max-width: 25vw;*/
-/*  height: 45vh;*/
-/*  display: block;*/
-/*  object-fit: container;*/
-/*}*/
 
 /* Container */
 .swiper {
   position: relative;
+  top: 140px;
   padding: 10px 18px 10px 7px;
 }
 
@@ -82,10 +77,11 @@
 }
 
 .highlights {
-  color: white;
-  font-size: 1.1rem;
-  font-weight: bold;
+  /*color: white;*/
+  font-size: 1.05rem;
+  /*font-weight: bold;*/
   position: relative;
-  top: 14px;
+  top: 140px;
   left: 14px;
+  color: #ffffff !important;
 }
